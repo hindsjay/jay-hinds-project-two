@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Willow - Jay Hinds</title>
+  <!-- link for font awesome -->
+  <script src="https://kit.fontawesome.com/66b54d64ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="header-nav">
+      <!-- <input type="checkbox" id="hamburger-menu">
+      
+      creating hamburger menu with spans
+      <label for="hamburger-menu" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label> -->
+
+      <ul class="header-nav-items">
+        <li>Home</li>
+        <li>About</li>
+        <li><p class="header-logo">Willow</p></li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <h1>Willow</h1>
+    <div class="header-image-container">
+      <img src="./willow-assets/home-image-1.jpg" alt="photo of girl with organge jacket surrounded by green plants">
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="wrapper">
+        <h2>Who's Willow?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima enim quae dolorum. Nulla ipsam est minus facere officia eum vitae maiores veritatis velit, laudantium in molestias corrupti deserunt veniam tenetur! Consequatur a sapiente, magnam alias praesentium aliquid perferendis harum ipsam adipisci eligendi nam dolorum aspernatur. Et accusantium sit quis quidem tempora mollitia enim natus?</p>
+        <a href="">Find Out More</a>
+      </div> <!-- wrapper end -->
+    </section> <!-- about section end -->
+
+    <section class="blog-section">
+      <div class="blog-container">
+        <div class="blog-image-container">
+          <img src="willow-assets/home-image-2.jpg" alt="waterfall with white bridge in center surrounded by forestry">
+        </div>
+        <div class="blog-content-container">
+          <h2 class="blog-title">Favourite Things</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eveniet molestiae dignissimos accusamus corporis natus veniam illum consequatur illo inventore assumenda quis quaerat magni magnam! Fugit laborum animi distinctio molestiae architecto.</p>
+          <a href="">Read More</a>
+        </div>
+      </div> <!-- blog-container end -->
+
+      <div class="blog-container">
+        <div class="blog-image-container">
+          <img src="willow-assets/home-image-3.jpg" alt="close up of water lily">
+        </div>
+        <div class="blog-content-container">
+          <h2 class="blog-title">Bucket List</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eveniet molestiae dignissimos accusamus corporis natus veniam illum consequatur illo inventore assumenda quis quaerat magni magnam! Fugit laborum animi distinctio molestiae architecto.</p>
+          <a href="">Read More</a>
+        </div>
+      </div> <!-- blog-container end -->
+    </section> <!-- blog-section end -->
+
+    <section class="journey-section">
+      <div class="wrapper">
+        <div class="journey-image-container">
+          <img src="willow-assets/home-image-4.jpg" alt="back of girl in yellow rain jacket looking at some plants">
+        </div>
+        <h2>Willow's Journey</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur possimus qui, quia error, nobis repellendus illo ratione culpa officiis eveniet alias maiores voluptatibus voluptatem nesciunt distinctio commodi dolorem aliquid? Culpa nemo saepe recusandae praesentium tenetur sunt ut dignissimos velit nostrum, repellat perspiciatis obcaecati blanditiis, rerum, accusamus sequi neque?</p>
+        <a href="">Find Out More</a>
+      </div> <!-- wrapper end -->
+    </section> <!-- journey-section end -->
+
+    <!-- thought about using a <section> tag here but looking at the MDN docs for section it states section shouldn't be used if the sectioning is used for styling purposes which is what's happening here - using <div> instead -->
+    <div class="banner-image">
+      <div class="banner-image-container">
+        <img src="willow-assets/home-image-5.jpg" alt="banner image of green field with orange house in distance">
+      </div>
+    </div>  <!-- banner-image section end -->
+
+    <!-- image gallery section - decided to wrap in a list to be more semantic -->
+    <ul class="image-gallery">
+      <li>
+        <div>
+          <img src="willow-assets/home-image-6.jpg" alt="first person view standing in middle of road">
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="willow-assets/home-image-7.jpg" alt="3 whole lemons in a bowl with sliced lemons in another bowl">
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="willow-assets/home-image-8.jpg" alt="bottom of stairs with beige rail and dark blue patterned wall">
+        </div>
+      </li>
+    </ul>
+
+    <section class="links-section">
+      <div class="wrapper">
+        <div class="link-content-container">
+          <i class="fas fa-image"></i>
+          <div class="link-content">
+            <h3>Photos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde fugiat nam maxime perspiciatis dolorum magnam voluptates! Impedit, asperiores modi! Eveniet repellendus ullam laudantium culpa esse.</p>
+          </div>  <!-- link-content end -->
+        </div>  <!-- link-content-container end -->
+
+        <div class="link-content-container">
+          <i class="fas fa-user-alt"></i>
+          <div class="link-content">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde fugiat nam maxime perspiciatis dolorum magnam voluptates! Impedit, asperiores modi! Eveniet repellendus ullam laudantium culpa esse.</p>
+          </div> <!-- link-content end -->
+        </div> <!-- link-content-container end -->
+
+        <div class="link-content-container">
+          <i class="fas fa-desktop"></i>
+          <div class="link-content">
+            <h3>Blog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde fugiat nam maxime perspiciatis dolorum magnam voluptates! Impedit, asperiores modi! Eveniet repellendus ullam laudantium culpa esse.</p>
+          </div> <!-- link-content end -->
+        </div> <!-- link-content-container end -->
+
+        <div class="link-content-container">
+          <i class="fas fa-phone"></i>
+          <div class="link-content">
+            <h3>Photos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde fugiat nam maxime perspiciatis dolorum magnam voluptates! Impedit, asperiores modi! Eveniet repellendus ullam laudantium culpa esse.</p>
+          </div> <!-- link-content end -->
+        </div> <!-- link-content-container end -->
+      </div>  <!-- wrapper end -->
+    </section>  <!-- links-section end -->
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2018 HackerYou</p>
+  </footer>
+  
+</body>
+</html>
