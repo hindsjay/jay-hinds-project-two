@@ -1,0 +1,30 @@
+
+header {
+  height: 80vh;
+  background-color: $primary-color;
+  color: white;
+}
+
+.header-nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  a {
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+    font-family: $secondary-font;
+    // font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 1px;;
+  }
+
+  p {
+    margin: 0 10px;
+    font-family: $primary-font;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+}
