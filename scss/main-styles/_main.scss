@@ -1,0 +1,93 @@
+/* 
+*************  main section styles ***************
+*/
+
+body {
+  font-family: $secondary-font;
+}
+
+.main-about {
+  padding: 40px 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+}
+
+.blog-content-container {
+  padding: 30px 10px;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+}
+
+.journey-section {
+  text-align: center;
+  background-color: $design-white;
+  padding: 10px 0 40px;
+
+  h2 {
+    margin: 20px 0;
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+}
+
+
+/* 
+hiding banner image on mobile - felt it doesn't really add much value in mobile view and because we have limited space in mobile view I will hide in mobile and bring back in tablet/desktop views.
+*/
+.banner-image {
+  display: none;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    // margin: 15px;
+
+    &:nth-child(-n+2) {
+      width: 50%;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.links-section {
+  background-color: $design-white;
+  padding: 30px 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+.link-content {
+  text-align: center;
+  margin: 20px 0;
+}
