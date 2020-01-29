@@ -1,6 +1,49 @@
 
 
+header,
+section h2,
+.button {
+  font-family: $primary-font;
+}
+
+h1, 
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
 .header-nav-items,
 .header-title-container {
   display: flex;
+}
+
+.header-nav-items,
+.header-title-container h1,
+h2,
+h3,
+.button {
+  text-transform: uppercase;
+}
+
+.header-nav-items,
+.header-title-container h1,
+h2 {
+  letter-spacing: 1px;
+}
+
+// button style
+.button {
+  padding: 10px 10px 8px;
+  background-color: $accent;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.main-about h2,
+.journey-section h2 {
+  font-size: 2.5rem;
 }

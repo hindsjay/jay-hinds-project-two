@@ -273,31 +273,161 @@ img {
   margin: 0 auto;
 }
 
+header,
+section h2,
+.button {
+  font-family: "Abril Fatface", cursive;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+.header-nav-items,
+.header-title-container {
+  display: flex;
+}
+
+.header-nav-items,
+.header-title-container h1,
+h2,
+h3,
+.button {
+  text-transform: uppercase;
+}
+
+.header-nav-items,
+.header-title-container h1,
+h2 {
+  letter-spacing: 1px;
+}
+
+.button {
+  padding: 10px 10px 8px;
+  background-color: #e4a436;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.main-about h2,
+.journey-section h2 {
+  font-size: 2.5rem;
+}
+
+/* 
+*************  header styles ***************
+*/
 header {
-  height: 80vh;
   background-color: #345231;
   color: white;
+  padding-top: 50px;
 }
 
 .header-nav-items {
-  display: flex;
-  justify-content: center;
+  display: none;
+}
+
+.header-title-container {
+  flex-direction: column;
   align-items: center;
-  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
 }
-.header-nav-items a {
-  padding: 10px 20px;
-  display: block;
-  cursor: pointer;
+.header-title-container h1 {
+  font-size: 6.3rem;
+}
+
+/* 
+*************  main section styles ***************
+*/
+body {
   font-family: "Montserrat", sans-serif;
+}
+
+.main-about {
+  padding: 40px 0;
+  text-align: center;
+}
+.main-about h2 {
+  margin-bottom: 10px;
+}
+.main-about p {
   font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.blog-content-container {
+  padding: 30px 10px;
+  text-align: center;
+}
+.blog-content-container h2 {
+  font-size: 2rem;
+}
+.blog-content-container p {
+  margin: 20px 0;
+}
+
+.journey-section {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 10px 0 40px;
+}
+.journey-section h2 {
+  margin: 20px 0;
+}
+.journey-section .button {
+  margin-top: 20px;
+}
+
+/* 
+hiding banner image on mobile - felt it doesn't really add much value in mobile view and because we have limited space in mobile view I will hide in mobile and bring back in tablet/desktop views.
+*/
+.banner-image {
+  display: none;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-gallery li:nth-child(-n+2) {
+  width: 50%;
+}
+.image-gallery li:last-child {
+  display: none;
+}
+
+.links-section {
+  background-color: #f6f6f6;
+  padding: 30px 0;
+}
+.links-section .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.links-section h3 {
+  font-size: 2rem;
   letter-spacing: 1px;
 }
-.header-nav-items p {
-  margin: 0 10px;
-  font-family: "Abril Fatface", cursive;
-  font-size: 3.2rem;
-  letter-spacing: 1px;
+
+.link-content {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  background: #1f1f1f;
+  color: white;
+}
+footer p {
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

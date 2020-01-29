@@ -1,30 +1,81 @@
+/* 
+*************  header styles ***************
+*/
+
 
 header {
-  height: 80vh;
   background-color: $primary-color;
   color: white;
+  padding-top: 50px;
 }
+
 
 .header-nav-items {
-  display: flex;
-  justify-content: center;
+  display: none;
+}
+
+.header-title-container {
+  flex-direction: column;
   align-items: center;
-  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
 
-  a {
-    padding: 10px 20px;
-    display: block;
-    cursor: pointer;
-    font-family: $secondary-font;
-    // font-weight: 700;
-    font-size: 1.7rem;
-    letter-spacing: 1px;;
-  }
-
-  p {
-    margin: 0 10px;
-    font-family: $primary-font;
-    font-size: 3.2rem;
-    letter-spacing: 1px;
+  h1 {
+    font-size: 6.3rem;
   }
 }
+
+
+
+
+/// DESKTOP STYLES
+// .header-nav-items {
+//   justify-content: center;
+//   align-items: center;
+//   text-transform: uppercase;
+
+//   a {
+//     padding: 10px 20px;
+//     display: block;
+//     cursor: pointer;
+//     font-family: $secondary-font;
+//     // font-weight: 700;
+//     font-size: 1.7rem;
+//   }
+
+//   p {
+//     margin: 0 10px;
+//     font-family: $primary-font;
+//     font-size: 3.2rem;
+//   }
+// }
+
+// .header-title-container {
+//   align-items: center;
+//   justify-content: space-evenly;
+
+//   h1 {
+//     font-size: 8.5rem;
+//     width: 60%;
+//   }
+// }
+
+
+// .header-title-container {
+//   h1 {
+//   position: relative;
+
+//     &::before {
+//       display: none;
+//       background-image: url('../willow-assets/circle-text.png');
+//       background-repeat: no-repeat;
+//       display: block;
+//       height: 180px;
+//       width: 180px;
+//       content: "";
+//       position: absolute;
+//       top: 10%;
+//       left: 10%;
+//     }
+//   }
+// }
