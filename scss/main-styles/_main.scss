@@ -87,7 +87,25 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
   }
 }
 
+.link-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  i {
+    font-size: 1.7rem;
+    padding: 12px;
+    background-color: $accent;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+
 .link-content {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0 30px;
+
+  p {
+    margin-top: 10px;
+  }
 }
