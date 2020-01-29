@@ -416,9 +416,25 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
   letter-spacing: 1px;
 }
 
+.link-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-content-container i {
+  font-size: 1.7rem;
+  padding: 12px;
+  background-color: #e4a436;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
 .link-content {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0 30px;
+}
+.link-content p {
+  margin-top: 10px;
 }
 
 footer {
