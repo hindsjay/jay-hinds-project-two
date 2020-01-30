@@ -6,12 +6,17 @@
 header {
   background-color: $primary-color;
   color: white;
-  padding-top: 50px;
+  padding-top: 100px;
 }
-
 
 .header-nav-items {
   display: none;
+}
+
+.title-image-container {
+  transform: translate(-12px, -116%) rotate(37deg);
+  display: inline-block;
+  width: 68px;
 }
 
 .header-title-container {
@@ -25,40 +30,23 @@ header {
   }
 }
 
+.header-image-container {
+  transform: translate(0, -31px);
+  background-color: white;
 
 
+  img {
 
-/// DESKTOP STYLES
-// .header-nav-items {
-//   justify-content: center;
-//   align-items: center;
-//   text-transform: uppercase;
+    object-position: 20px 20px;
+    margin: -20px -20px;
+    padding: 0 20px 20px 0;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    transform: translate(20px, -20px);
+  }
 
-//   a {
-//     padding: 10px 20px;
-//     display: block;
-//     cursor: pointer;
-//     font-family: $secondary-font;
-//     // font-weight: 700;
-//     font-size: 1.7rem;
-//   }
+}
 
-//   p {
-//     margin: 0 10px;
-//     font-family: $primary-font;
-//     font-size: 3.2rem;
-//   }
-// }
-
-// .header-title-container {
-//   align-items: center;
-//   justify-content: space-evenly;
-
-//   h1 {
-//     font-size: 8.5rem;
-//     width: 60%;
-//   }
-// }
 
 
 // .header-title-container {

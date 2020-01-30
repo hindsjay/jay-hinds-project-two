@@ -275,22 +275,19 @@ img {
 
 header,
 section h2,
+h3,
 .button {
   font-family: "Abril Fatface", cursive;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 400;
 }
 
 p {
-  font-size: 1.7rem;
-}
-
-.header-nav-items,
-.header-title-container {
-  display: flex;
+  font-size: 1.6rem;
 }
 
 .header-nav-items,
@@ -313,6 +310,8 @@ h2 {
   letter-spacing: 0.5px;
   display: inline-block;
   font-size: 1.5rem;
+  width: 115px;
+  text-align: center;
 }
 
 .main-about h2,
@@ -326,11 +325,17 @@ h2 {
 header {
   background-color: #345231;
   color: white;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .header-nav-items {
   display: none;
+}
+
+.title-image-container {
+  transform: translate(-12px, -116%) rotate(37deg);
+  display: inline-block;
+  width: 68px;
 }
 
 .header-title-container {
@@ -343,6 +348,19 @@ header {
   font-size: 6.3rem;
 }
 
+.header-image-container {
+  transform: translate(0, -31px);
+  background-color: white;
+}
+.header-image-container img {
+  object-position: 20px 20px;
+  margin: -20px -20px;
+  padding: 0 20px 20px 0;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  transform: translate(20px, -20px);
+}
+
 /* 
 *************  main section styles ***************
 */
@@ -353,13 +371,15 @@ body {
 .main-about {
   padding: 40px 0;
   text-align: center;
+  background-color: #f6f6f6;
 }
 .main-about h2 {
   margin-bottom: 10px;
 }
 .main-about p {
-  font-size: 1.7rem;
   margin-bottom: 20px;
+  max-width: 850px;
+  margin: 0 auto 20px;
 }
 
 .blog-content-container {
@@ -370,13 +390,18 @@ body {
   font-size: 2rem;
 }
 .blog-content-container p {
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .journey-section {
   text-align: center;
   background-color: #f6f6f6;
   padding: 10px 0 40px;
+}
+.journey-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .journey-section h2 {
   margin: 20px 0;
@@ -409,7 +434,10 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 }
 .links-section .wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .links-section h3 {
   font-size: 2rem;
@@ -432,6 +460,7 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 .link-content {
   text-align: center;
   margin: 10px 0 30px;
+  max-width: 520px;
 }
 .link-content p {
   margin-top: 10px;
@@ -444,6 +473,156 @@ footer {
 }
 footer p {
   padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 0;
+  }
+
+  .header-nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .header-nav-items a {
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+  }
+  .header-nav-items p {
+    margin: 0 10px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 3.2rem;
+  }
+
+  .header-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .header-title-container h1 {
+    font-size: 8.5rem;
+    width: 60%;
+  }
+
+  .title-image-container {
+    transform: translate(-28px, -105%) rotate(14deg);
+    width: 90px;
+  }
+
+  .image-gallery {
+    margin: 40px auto;
+    max-width: 920px;
+  }
+  .image-gallery li {
+    margin: 15px;
+  }
+  .image-gallery li:nth-child(-n+3) {
+    width: calc((100% / 3) - 30px);
+  }
+  .image-gallery li:last-child {
+    display: block;
+  }
+
+  .link-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .link-content {
+    margin: 9px 0 30px 20px;
+    text-align: unset;
+  }
+}
+@media (min-width: 800px) {
+  .blog-container,
+.blog-content-container {
+    display: flex;
+  }
+
+  .blog-content-container {
+    text-align: unset;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .testing-div {
+    background-color: #709b6b;
+  }
+
+  .blog-container {
+    margin: 30px 0;
+    justify-content: center;
+  }
+  .blog-container:first-child .blog-content-container {
+    justify-content: flex-end;
+    padding: 0 0 0 55px;
+    max-width: 430px;
+  }
+  .blog-container:nth-child(2) .blog-content-container {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0 80px 0 0;
+  }
+  .blog-container:nth-child(2) .blog-content-container p {
+    text-align: right;
+  }
+
+  .blog-image-container {
+    width: 77%;
+    margin-left: auto;
+  }
+  .blog-image-container img {
+    max-width: 428px;
+  }
+
+  .blog-container:nth-child(2) .blog-image-container {
+    order: 1;
+  }
+
+  .journey-section {
+    text-align: unset;
+    padding: 40px 0 50px;
+  }
+  .journey-section .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 950px;
+  }
+
+  .journey-image-container {
+    width: 30%;
+    max-width: 240px;
+    margin-right: 20px;
+  }
+
+  .journey-content-container {
+    width: calc(70% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+  }
+  .journey-content-container h2 {
+    margin: 0;
+  }
+  .journey-content-container p {
+    max-width: 650px;
+  }
+  .journey-content-container .button {
+    margin: 0;
+    width: 160px;
+  }
+
+  .banner-image {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

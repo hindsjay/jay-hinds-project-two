@@ -2,22 +2,19 @@
 
 header,
 section h2,
+h3,
 .button {
   font-family: $primary-font;
 }
 
 h1, 
-h2 {
+h2,
+h3 {
   font-weight: 400;
 }
 
 p {
-  font-size: 1.7rem;
-}
-
-.header-nav-items,
-.header-title-container {
-  display: flex;
+  font-size: 1.6rem;
 }
 
 .header-nav-items,
@@ -41,6 +38,8 @@ h2 {
   letter-spacing: 0.5px;
   display: inline-block;
   font-size: 1.5rem;
+  width: 115px;
+  text-align: center;
 }
 
 .main-about h2,

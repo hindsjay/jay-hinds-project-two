@@ -9,14 +9,16 @@ body {
 .main-about {
   padding: 40px 0;
   text-align: center;
+  background-color: $design-white;
 
   h2 {
     margin-bottom: 10px;
   }
 
   p {
-    font-size: 1.7rem;
     margin-bottom: 20px;
+    max-width: 850px;
+    margin: 0 auto 20px;
   }
 }
 
@@ -29,7 +31,7 @@ body {
   }
 
   p {
-    margin: 20px 0;
+    margin: 20px auto;
   }
 }
 
@@ -38,6 +40,12 @@ body {
   background-color: $design-white;
   padding: 10px 0 40px;
 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   h2 {
     margin: 20px 0;
   }
@@ -45,6 +53,7 @@ body {
   .button {
     margin-top: 20px;
   }
+
 }
 
 
@@ -60,7 +69,6 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
   flex-wrap: wrap;
 
   li {
-    // margin: 15px;
 
     &:nth-child(-n+2) {
       width: 50%;
@@ -78,7 +86,10 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 
   .wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   h3 {
@@ -104,6 +115,8 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 .link-content {
   text-align: center;
   margin: 10px 0 30px;
+  max-width: 520px;
+
 
   p {
     margin-top: 10px;
