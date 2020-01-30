@@ -13,8 +13,13 @@ header {
   display: none;
 }
 
+.main-title-container {
+  text-align: center;
+}
+
 .title-image-container {
-  transform: translate(-12px, -116%) rotate(37deg);
+  // transform: translate(-12px, -116%) rotate(37deg);
+  transform: translate(-118px, -116%) rotate(37deg);
   display: inline-block;
   width: 68px;
 }

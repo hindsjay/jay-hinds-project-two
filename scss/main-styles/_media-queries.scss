@@ -38,7 +38,7 @@
   }
 
   .title-image-container {
-    transform: translate(-28px, -105%) rotate(14deg);
+    transform: translate(-164px, -105%) rotate(14deg);
     width: 90px;
   }
 
@@ -89,18 +89,24 @@
   }
 
   .blog-container {
-    // padding: 30px 0;
-    margin: 30px 0;
+    margin: 50px auto;
     justify-content: center;
+    max-width: 860px;
 
-    // &:first-child .blog-image-container {
-    //   box-shadow: 20px 20px $secondary-color, -200px 20px $secondary-color;
-    // }
+    &:first-child .blog-image-container {
+      box-shadow: 20px 20px $secondary-color, -300px 20px $secondary-color;
+      transform: translate(1px, -21px);
+    }
 
     &:first-child .blog-content-container {
       justify-content: flex-end;
       padding: 0 0 0 55px;
-      max-width: 430px;
+      background-color: white;
+
+
+      p {
+        max-width: 430px;
+      }
     }
 
     &:nth-child(2) .blog-content-container {
@@ -115,8 +121,6 @@
   }
 
   .blog-image-container {
-    width: 77%;
-    margin-left: auto;
 
     img {
       max-width: 428px;
@@ -125,6 +129,7 @@
 
   .blog-container:nth-child(2) .blog-image-container {
     order: 1;
+    box-shadow: 20px 20px $primary-color, 300px 20px $primary-color;
   }
 
   .journey-section {
