@@ -9,8 +9,22 @@ header {
   padding-top: 100px;
 }
 
+.blog-header {
+  background-image: url('../willow-assets/blog-image-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+
+  h1 {
+    margin: auto 0 auto;
+    font-size: 3.8rem;
+    text-align: center;
+  }
+}
+
 .header-nav-items {
   display: none;
+  background-color: $primary-color;
 }
 
 .main-title-container {
@@ -18,7 +32,6 @@ header {
 }
 
 .title-image-container {
-  // transform: translate(-12px, -116%) rotate(37deg);
   transform: translate(-118px, -116%) rotate(37deg);
   display: inline-block;
   width: 68px;

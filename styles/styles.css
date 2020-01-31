@@ -286,7 +286,12 @@ h3 {
   font-weight: 400;
 }
 
-p {
+section h2 {
+  font-size: 2rem;
+}
+
+p,
+.recent-posts-container ul {
   font-size: 1.6rem;
 }
 
@@ -294,7 +299,8 @@ p {
 .header-title-container h1,
 h2,
 h3,
-.button {
+.button,
+.blog-header h1 {
   text-transform: uppercase;
 }
 
@@ -328,8 +334,21 @@ header {
   padding-top: 100px;
 }
 
+.blog-header {
+  background-image: url("../willow-assets/blog-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.blog-header h1 {
+  margin: auto 0 auto;
+  font-size: 3.8rem;
+  text-align: center;
+}
+
 .header-nav-items {
   display: none;
+  background-color: #345231;
 }
 
 .main-title-container {
@@ -479,6 +498,71 @@ footer p {
   padding: 10px 0;
 }
 
+.about-container {
+  text-align: center;
+  width: 90%;
+  margin: 20px auto 40px;
+}
+.about-container h2 {
+  margin: 20px 0;
+}
+.about-container p {
+  margin: 20px 0;
+}
+
+.about-image-container span {
+  color: #709b6b;
+}
+
+.recent-posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.recent-posts-container h2 {
+  margin-bottom: 15px;
+}
+.recent-posts-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.blog-post-section {
+  text-align: center;
+  margin: 20px auto 50px;
+  border-bottom: 3px solid #709b6b;
+}
+.blog-post-section p {
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.comments-section {
+  border-bottom: 3px solid #709b6b;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.comments-container:first-child {
+  margin-bottom: 20px;
+}
+.comments-container img {
+  width: 180px;
+  height: 180px;
+}
+.comments-container .comments-content {
+  text-align: center;
+}
+.comments-container .comments-content p {
+  margin: 15px 0;
+}
+
 @media (min-width: 768px) {
   header {
     padding-top: 0;
@@ -606,9 +690,10 @@ footer p {
   }
 
   .journey-image-container {
-    width: 30%;
+    width: 23%;
     max-width: 240px;
     margin-right: 20px;
+    box-shadow: 20px 20px #709b6b;
   }
 
   .journey-content-container {
