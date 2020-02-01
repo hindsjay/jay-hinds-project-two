@@ -534,8 +534,11 @@ footer p {
   border-bottom: 3px solid #709b6b;
 }
 .blog-post-section p {
-  margin: 15px 0;
+  margin: 20px 0;
   padding: 0 15px;
+}
+.blog-post-section p:nth-child(2) {
+  font-size: 1.4rem;
 }
 
 .comments-section {
@@ -553,14 +556,17 @@ footer p {
   margin-bottom: 20px;
 }
 .comments-container img {
-  width: 180px;
-  height: 180px;
+  width: 90px;
+  height: 90px;
 }
 .comments-container .comments-content {
   text-align: center;
 }
 .comments-container .comments-content p {
   margin: 15px 0;
+}
+.comments-container .comments-content p:first-child {
+  font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
