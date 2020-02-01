@@ -338,10 +338,9 @@ header {
   background-image: url("../willow-assets/blog-image-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 50vh;
 }
 .blog-header h1 {
-  margin: auto 0 auto;
   font-size: 3.8rem;
   text-align: center;
 }
@@ -498,15 +497,21 @@ footer p {
   padding: 10px 0;
 }
 
+.blog-body {
+  background-color: #f6f6f6;
+}
+.blog-body aside,
+.blog-body section {
+  background-color: white;
+}
+
 .about-container {
   text-align: center;
   width: 90%;
-  margin: 20px auto 40px;
+  margin: 20px auto 20px;
+  padding-bottom: 20px;
 }
 .about-container h2 {
-  margin: 20px 0;
-}
-.about-container p {
   margin: 20px 0;
 }
 
@@ -518,7 +523,8 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 20px 0;
 }
 .recent-posts-container h2 {
   margin-bottom: 15px;
@@ -530,8 +536,9 @@ footer p {
 
 .blog-post-section {
   text-align: center;
-  margin: 20px auto 50px;
   border-bottom: 3px solid #709b6b;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 .blog-post-section p {
   margin: 20px 0;
@@ -539,6 +546,9 @@ footer p {
 }
 .blog-post-section p:nth-child(2) {
   font-size: 1.4rem;
+}
+.blog-post-section p:last-child {
+  margin-bottom: 0;
 }
 
 .comments-section {
@@ -549,24 +559,46 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
-}
-.comments-container:first-child {
-  margin-bottom: 20px;
+  padding: 20px;
 }
 .comments-container img {
   width: 90px;
   height: 90px;
 }
-.comments-container .comments-content {
+
+.comments-content {
   text-align: center;
 }
-.comments-container .comments-content p {
+.comments-content p:first-child {
+  font-size: 1.4rem;
   margin: 15px 0;
 }
-.comments-container .comments-content p:first-child {
-  font-size: 1.4rem;
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+form .button {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input, textarea {
+  border: none;
+}
+
+input {
+  width: 90%;
+  height: 45px;
+  margin: 5px auto;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0 0 10px;
 }
 
 @media (min-width: 768px) {
