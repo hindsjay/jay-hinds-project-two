@@ -500,7 +500,7 @@ footer p {
 }
 
 .blog-body {
-  background-color: grey;
+  background-color: #f6f6f6;
 }
 .blog-body aside {
   background-color: white;
@@ -762,13 +762,8 @@ textarea::placeholder {
     text-align: unset;
   }
 
-  .blog-header {
-    position: relative;
-  }
   .blog-header h1 {
-    position: absolute;
-    top: 88%;
-    left: 30px;
+    transform: translate(-32%, 480%);
   }
 }
 @media (min-width: 800px) {
