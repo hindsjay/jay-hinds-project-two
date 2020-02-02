@@ -139,6 +139,10 @@
   .blog-header h1 {
     transform: translate(-32%, 480%);
   }
+
+  .contact-header h1 {
+    transform: translate(-27%, 429%); 
+  }
 }
 
 
@@ -249,6 +253,35 @@
     display: block;
   }
 
+  .address-social {
+    margin: 0;
+    height: 181px;
+  }
+
+  .contact-section {
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      max-width: 850px;
+    }
+
+    form {
+      width: 60%;
+    }
+
+    .form-container {
+      padding: 0;
+    }
+
+    input {
+      margin-top: 0;
+    }
+  }
+
+  .contact-header .wrapper {
+    max-width: 1000px;
+  }
 }
 
 

@@ -11,13 +11,25 @@ header {
 
 .blog-header {
   background-image: url('../willow-assets/blog-image-1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 50vh;
+  @extend %header-background;
 
   h1 {
     font-size: 3.8rem;
     text-align: center;
+  }
+}
+
+
+.contact-header {
+  height: 50vh;
+  background-image: url('../willow-assets/contact-image-1.jpg');
+  @extend %header-background;
+
+  h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 

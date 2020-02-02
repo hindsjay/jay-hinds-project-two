@@ -231,6 +231,11 @@ html {
   overflow: hidden;
 }
 
+.contact-header, .blog-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* ************* global styles and stripping base styles ************* */
 html {
   font-size: 62.5%;
@@ -338,13 +343,21 @@ header {
 
 .blog-header {
   background-image: url("../willow-assets/blog-image-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 50vh;
 }
 .blog-header h1 {
   font-size: 3.8rem;
   text-align: center;
+}
+
+.contact-header {
+  height: 50vh;
+  background-image: url("../willow-assets/contact-image-1.jpg");
+}
+.contact-header h1 {
+  font-size: 4.2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header-nav-items {
@@ -638,6 +651,37 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
+.contact-section {
+  background-color: #f6f6f6;
+  padding: 20px 0 40px;
+}
+.contact-section .form-container {
+  max-width: 560px;
+}
+
+.address-social {
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 288px;
+}
+.address-social p {
+  font-size: 1.4rem;
+}
+.address-social p:nth-child(2) {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.address-social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+  color: #345231;
+}
+
 @media (min-width: 600px) {
   .comments-container {
     flex-direction: row;
@@ -765,6 +809,10 @@ textarea::placeholder {
   .blog-header h1 {
     transform: translate(-32%, 480%);
   }
+
+  .contact-header h1 {
+    transform: translate(-27%, 429%);
+  }
 }
 @media (min-width: 800px) {
   .blog-main .wrapper {
@@ -858,6 +906,31 @@ textarea::placeholder {
 
   .banner-image {
     display: block;
+  }
+
+  .address-social {
+    margin: 0;
+    height: 181px;
+  }
+
+  .contact-section .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 850px;
+  }
+  .contact-section form {
+    width: 60%;
+  }
+  .contact-section .form-container {
+    padding: 0;
+  }
+  .contact-section input {
+    margin-top: 0;
+  }
+
+  .contact-header .wrapper {
+    max-width: 1000px;
   }
 }
 @media (min-width: 1000px) {
