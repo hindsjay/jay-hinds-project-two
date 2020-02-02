@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header>
+  <header class="contact-header">
     <nav class="header-nav">
     <!-- <input type="checkbox" id="hamburger-menu">
       
@@ -33,59 +33,67 @@
       </ul>
     </nav>
   
-    <h1>Contact Me</h1>
-  </header>
+    <div class="wrapper">
+      <h1>Contact Me</h1>
+    </div>
+  </header class="header-contact">
 
-  <main>
+  <main class="contact-main">
     <section class="contact-section">
-      <div class="address-social">
-        <ul class="social-icons">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f" aria-hidden="true" title="Facebook Social Icon"></i>
-              <span class="sr-only">Facebook Social Icon</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter" aria-hidden="true" title="Twitter Social Icon"></i>
-              <span class="sr-only">Twitter Social Icon</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin-in" aria-hidden="true" title="LinkedIn Social Icon"></i>
-              <span class="sr-only">LinkedIn Social Icon</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram" aria-hidden="true" title="Instagram Social Icon"></i>
-              <span class="sr-only">Instagram Social Icon</span>
-            </a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="address-social">
+          <ul class="social-icons">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f" aria-hidden="true" title="Facebook Social Icon"></i>
+                <span class="sr-only">Facebook Social Icon</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" aria-hidden="true" title="Twitter Social Icon"></i>
+                <span class="sr-only">Twitter Social Icon</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin-in" aria-hidden="true" title="LinkedIn Social Icon"></i>
+                <span class="sr-only">LinkedIn Social Icon</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true" title="Instagram Social Icon"></i>
+                <span class="sr-only">Instagram Social Icon</span>
+              </a>
+            </li>
+          </ul>
 
-        <p class="email">info@email.com</p>
-        <p>123 - 456 - 7890</p>
-        <p>123 Queen Street West, Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
-      
-      </div>  <!-- address-social end -->
+          <p class="email">info@email.com</p>
+          <p>123 - 456 - 7890</p>
+          <p>123 Queen Street West, Unit 10</p>
+          <p>Toronto, Ontario</p>
+          <p>M5V2D5</p>
+        
+        </div>  <!-- address-social end -->
 
-      <form>
-        <label for="name" class="sr-only">name input below</label>
-        <input id="name" type="text" name="name" placeholder="Name">
+        <form>
+          <div class="form-container">
+            <div class="input-container">
+              <label for="name" class="sr-only">name input below</label>
+              <input id="name" type="text" name="name" placeholder="Name">
 
-        <label for="email" class="sr-only">email input below</label>
-        <input id="email" type="email" name="email" placeholder="Email address">
+              <label for="email" class="sr-only">email input below</label>
+              <input id="email" type="email" name="email" placeholder="Email address">
+            </div>
 
-        <label for="message" class="sr-only">type message below</label>
-        <textarea placeholder="Message"></textarea>
+            <label for="message" class="sr-only">type message below</label>
+            <textarea placeholder="Message" rows="10"></textarea>
 
-        <button type="submit" class="button">Submit</button>
-      </form>
+            <button type="submit" class="button">Submit</button>
+          </div>
+        </form>
+      </div>
 
     </section>  <!-- contact-section end -->
   </main>
