@@ -2,6 +2,7 @@
 
 header,
 section h2,
+aside h2,
 h3,
 .button {
   font-family: $primary-font;
@@ -13,7 +14,8 @@ h3 {
   font-weight: 400;
 }
 
-section h2 {
+section h2,
+aside h2 {
   font-size: 2rem;
 }
 
