@@ -268,13 +268,14 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 90%;
   margin: 0 auto;
 }
 
 header,
 section h2,
+aside h2,
 h3,
 .button {
   font-family: "Abril Fatface", cursive;
@@ -286,7 +287,8 @@ h3 {
   font-weight: 400;
 }
 
-section h2 {
+section h2,
+aside h2 {
   font-size: 2rem;
 }
 
@@ -498,18 +500,32 @@ footer p {
 }
 
 .blog-body {
-  background-color: #f6f6f6;
+  background-color: grey;
 }
-.blog-body aside,
-.blog-body section {
+.blog-body aside {
   background-color: white;
+}
+
+.blog-post-section,
+.comments-container {
+  background-color: white;
+}
+
+.blog-main {
+  padding-bottom: 30px;
+  margin-top: 60px;
+}
+
+.aside-container {
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .about-container {
   text-align: center;
   width: 90%;
-  margin: 20px auto 20px;
-  padding-bottom: 20px;
+  margin: 0 auto 20px;
+  padding: 20px 0;
 }
 .about-container h2 {
   margin: 20px 0;
@@ -524,7 +540,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  padding: 20px 0;
+  padding: 20px;
 }
 .recent-posts-container h2 {
   margin-bottom: 15px;
@@ -537,12 +553,11 @@ footer p {
 .blog-post-section {
   text-align: center;
   border-bottom: 3px solid #709b6b;
-  padding: 20px 0;
+  padding: 20px;
   margin-bottom: 20px;
 }
 .blog-post-section p {
   margin: 20px 0;
-  padding: 0 15px;
 }
 .blog-post-section p:nth-child(2) {
   font-size: 1.4rem;
@@ -565,6 +580,9 @@ footer p {
   width: 90px;
   height: 90px;
 }
+.comments-container:first-child {
+  margin-bottom: 10px;
+}
 
 .comments-content {
   text-align: center;
@@ -574,33 +592,84 @@ footer p {
   margin: 15px 0;
 }
 
-form {
+.form-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: 0 auto;
 }
-form .button {
-  width: 90%;
+.form-container .button {
+  width: 100%;
+  margin: 0 auto 20px;
+  border: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
 }
 
 input, textarea {
   border: none;
+  font-size: 1.5rem;
 }
 
 input {
-  width: 90%;
+  width: 100%;
   height: 45px;
-  margin: 5px auto;
+  margin: 5px 0;
   padding-left: 10px;
+}
+input::placeholder {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 5px auto 10px;
   padding: 15px 0 0 10px;
+  resize: none;
+}
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
 }
 
+@media (min-width: 600px) {
+  .comments-container {
+    flex-direction: row;
+    align-items: unset;
+    justify-content: space-between;
+  }
+
+  .comments-image {
+    width: 20%;
+  }
+
+  .comments-content {
+    text-align: unset;
+    width: 80%;
+  }
+  .comments-content p:first-child {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+
+  .input-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .input-container:nth-child(2) {
+    margin-right: 10px;
+  }
+
+  input {
+    width: calc(50% - 5px);
+  }
+}
 @media (min-width: 768px) {
   header {
     padding-top: 0;
@@ -641,6 +710,33 @@ textarea {
     width: 90px;
   }
 
+  .aside-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: unset;
+    margin-bottom: 20px;
+  }
+
+  .section-container {
+    max-width: 800px;
+  }
+
+  .blog-about {
+    width: 53%;
+  }
+
+  .about-container,
+.blog-post-section {
+    text-align: unset;
+  }
+
+  .recent-posts-container {
+    width: 41%;
+    height: 150px;
+    align-items: unset;
+  }
+
   .image-gallery {
     margin: 40px auto;
     max-width: 920px;
@@ -665,8 +761,21 @@ textarea {
     margin: 9px 0 30px 20px;
     text-align: unset;
   }
+
+  .blog-header {
+    position: relative;
+  }
+  .blog-header h1 {
+    position: absolute;
+    top: 88%;
+    left: 30px;
+  }
 }
 @media (min-width: 800px) {
+  .blog-main .wrapper {
+    max-width: 750px;
+  }
+
   .blog-container,
 .blog-content-container {
     display: flex;
@@ -754,6 +863,38 @@ textarea {
 
   .banner-image {
     display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .blog-main .wrapper {
+    max-width: 1100px;
+  }
+
+  .aside-container {
+    flex-direction: column;
+    justify-content: unset;
+    max-width: unset;
+    width: 29%;
+    margin: 0;
+  }
+
+  .blog-about {
+    width: unset;
+  }
+
+  .recent-posts-container {
+    margin-top: 20px;
+    width: unset;
+  }
+
+  .blog-main .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .section-container {
+    width: 60%;
   }
 }
 
