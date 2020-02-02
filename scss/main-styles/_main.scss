@@ -7,7 +7,7 @@ body {
 }
 
 .main-about {
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
   background-color: $design-white;
 
@@ -31,8 +31,14 @@ body {
   }
 
   p {
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 600px;
   }
+}
+
+.blog-image-container {
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .journey-section {

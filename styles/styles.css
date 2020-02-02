@@ -367,6 +367,7 @@ header {
 
 .main-title-container {
   text-align: center;
+  height: 100px;
 }
 
 .title-image-container {
@@ -379,23 +380,18 @@ header {
   flex-direction: column;
   align-items: center;
   width: 90%;
+  max-width: 720px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 .header-title-container h1 {
   font-size: 6.3rem;
 }
 
 .header-image-container {
-  transform: translate(0, -31px);
-  background-color: white;
-}
-.header-image-container img {
-  object-position: 20px 20px;
-  margin: -20px -20px;
-  padding: 0 20px 20px 0;
-  width: calc(100% + 40px);
-  height: calc(100% + 40px);
-  transform: translate(20px, -20px);
+  padding-bottom: 20px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 /* 
@@ -406,7 +402,7 @@ body {
 }
 
 .main-about {
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
   background-color: #f6f6f6;
 }
@@ -427,7 +423,13 @@ body {
   font-size: 2rem;
 }
 .blog-content-container p {
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.blog-image-container {
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .journey-section {
@@ -676,13 +678,17 @@ textarea::placeholder {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 55%;
+  width: 65%;
   margin-bottom: 10px;
   font-size: 1.9rem;
   color: #345231;
 }
 
 @media (min-width: 600px) {
+  .header-image-container img {
+    box-shadow: 20px 20px white;
+  }
+
   .comments-container {
     flex-direction: row;
     align-items: unset;
@@ -717,6 +723,11 @@ textarea::placeholder {
 @media (min-width: 768px) {
   header {
     padding-top: 0;
+  }
+
+  .header-image-container {
+    max-width: 300px;
+    transform: translateY(14%);
   }
 
   .header-nav-items {
@@ -840,8 +851,10 @@ textarea::placeholder {
     max-width: 860px;
   }
   .blog-container:first-child .blog-image-container {
-    box-shadow: 20px 20px #709b6b, -300px 20px #709b6b;
     transform: translate(1px, -21px);
+  }
+  .blog-container:first-child .blog-image-container img {
+    box-shadow: 20px 20px #709b6b, -300px 20px #709b6b;
   }
   .blog-container:first-child .blog-content-container {
     justify-content: flex-end;
@@ -866,6 +879,8 @@ textarea::placeholder {
 
   .blog-container:nth-child(2) .blog-image-container {
     order: 1;
+  }
+  .blog-container:nth-child(2) .blog-image-container img {
     box-shadow: 20px 20px #345231, 300px 20px #345231;
   }
 
@@ -906,6 +921,8 @@ textarea::placeholder {
 
   .banner-image {
     display: block;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .address-social {

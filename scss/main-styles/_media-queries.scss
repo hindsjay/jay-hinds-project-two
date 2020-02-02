@@ -1,6 +1,13 @@
 
 
 @media (min-width: 600px) {
+  .header-image-container {
+    
+    img {
+      box-shadow: 20px 20px white;
+    }
+  }
+
   .comments-container {
     flex-direction: row;
     align-items: unset;
@@ -33,7 +40,6 @@
   input {
     width: calc(50% - 5px);
   }
-
 }
 
 
@@ -41,6 +47,11 @@
 @media (min-width: 768px) {
   header {
     padding-top: 0;
+  }
+
+  .header-image-container {
+    max-width: 300px;
+    transform: translateY(14%);
   }
 
   .header-nav-items {
@@ -172,8 +183,11 @@
     max-width: 860px;
 
     &:first-child .blog-image-container {
-      box-shadow: 20px 20px $secondary-color, -300px 20px $secondary-color;
       transform: translate(1px, -21px);
+
+      img {
+        box-shadow: 20px 20px $secondary-color, -300px 20px $secondary-color;
+      }
     }
 
     &:first-child .blog-content-container {
@@ -194,6 +208,7 @@
 
       p {
         text-align: right;
+
       }
     }
   }
@@ -207,7 +222,10 @@
 
   .blog-container:nth-child(2) .blog-image-container {
     order: 1;
-    box-shadow: 20px 20px $primary-color, 300px 20px $primary-color;
+
+    img {
+      box-shadow: 20px 20px $primary-color, 300px 20px $primary-color;
+    }
   }
 
   .journey-section {
@@ -251,6 +269,8 @@
 
   .banner-image {
     display: block;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .address-social {
