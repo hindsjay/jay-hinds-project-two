@@ -73,6 +73,8 @@
         </section>
 
         <section class="comments-section">
+          <!-- added header but hid as there isn't one in the design but good to include for accessbiility reasons -->
+          <h2 class="sr-only">Comments Section</h2>
           <div class="comments-container">
             <div class="comments-image">
               <img src="willow-assets/blog-image-3.jpg" alt="headshot of Barb wearing black hat facing camera">
@@ -104,8 +106,8 @@
               <input id="email" type="email" name="email" placeholder="Email address">
             </div>
 
-            <label for="message" class="sr-only">Insert comment below</label>
-            <textarea placeholder="Comment" rows="10"></textarea>
+            <label for="comment" class="sr-only">Insert comment below</label>
+            <textarea id="comment" placeholder="Comment" rows="10"></textarea>
             
             <button type="submit" class="button">Post Comment</button>
           </div>

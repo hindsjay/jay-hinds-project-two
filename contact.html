@@ -36,10 +36,12 @@
     <div class="wrapper">
       <h1>Contact Me</h1>
     </div>
-  </header class="header-contact">
+  </header>
 
   <main class="contact-main">
     <section class="contact-section">
+      <!-- added header but hid as there isn't one in the design but good to include for accessbiility reasons -->
+      <h2 class="sr-only">Contact Section</h2>
       <div class="wrapper">
         <div class="address-social">
           <ul class="social-icons">
@@ -88,7 +90,7 @@
             </div>
 
             <label for="message" class="sr-only">type message below</label>
-            <textarea placeholder="Message" rows="10"></textarea>
+            <textarea id="message" placeholder="Message" rows="10"></textarea>
 
             <button type="submit" class="button">Submit</button>
           </div>
