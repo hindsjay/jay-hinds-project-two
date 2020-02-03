@@ -38,10 +38,6 @@
   }
 }
 
-.about-image-container span {
-  color: $secondary-color;
-}
-
 .recent-posts-container {
   @include flexin($display: flex, $direction: column, $align: center);
   margin-bottom: 20px;
@@ -54,6 +50,7 @@
   ul {
     list-style-type: disc;
     padding-left: 20px;
+    font-size: 1.6rem;
   }
 }
 

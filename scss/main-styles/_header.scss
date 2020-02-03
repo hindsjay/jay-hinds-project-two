@@ -31,10 +31,6 @@ header {
   }
 }
 
-.header-nav-items {
-  background-color: $primary-color;
-}
-
 .main-title-container {
   text-align: center;
   height: 100px;
@@ -63,6 +59,7 @@ header {
 
 /* ************* header hamburger menu styles ************* */
 .header-nav-items {
+  background-color: $primary-color;
   text-align: center;
   padding-top: 100px;
   margin: 0 auto;
