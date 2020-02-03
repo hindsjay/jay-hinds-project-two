@@ -325,6 +325,11 @@ h2 {
   font-size: 1.5rem;
   width: 115px;
   text-align: center;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  opacity: 0.7;
 }
 
 .main-about h2,
@@ -706,6 +711,7 @@ footer p {
 input, textarea {
   border: none;
   font-size: 1.5rem;
+  transition: border 0.3s ease;
 }
 
 input {
@@ -718,6 +724,9 @@ input::placeholder {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
 }
+input:focus {
+  border: 1px solid #e4a436;
+}
 
 textarea {
   width: 100%;
@@ -728,6 +737,9 @@ textarea {
 textarea::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
+}
+textarea:focus {
+  border: 1px solid #e4a436;
 }
 
 .contact-section {
@@ -758,7 +770,15 @@ textarea::placeholder {
   width: 65%;
   margin-bottom: 10px;
   font-size: 1.9rem;
+}
+.address-social a {
+  display: block;
+  padding: 3px;
   color: #345231;
+  transition: all 0.3s ease;
+}
+.address-social a:hover, .address-social a:focus {
+  color: #e4a436;
 }
 
 @media (min-width: 600px) {
