@@ -19,7 +19,6 @@ header {
   }
 }
 
-
 .contact-header {
   height: 50vh;
   background-image: url('../willow-assets/contact-image-1.jpg');
@@ -62,9 +61,7 @@ header {
   @include width-center($max-width: 450px, $margin: 0 auto);
 }
 
-
 /* ************* header hamburger menu styles ************* */
-
 .header-nav-items {
   text-align: center;
   padding-top: 100px;
@@ -86,7 +83,7 @@ header {
     letter-spacing: 3px;
 
     &:not(:nth-child(3)):hover,
-    &:not(:nth-child(3)):focus{
+    &:not(:nth-child(3)):focus {
       background-color: $primary-color;
       color: $accent;
       cursor: pointer;
@@ -123,7 +120,6 @@ header {
     transition: transform .3s ease;
     position: relative;
   }
-
 }
 
 .hamburger {

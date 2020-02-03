@@ -714,37 +714,29 @@ footer p {
 }
 
 input, textarea {
+  width: 100%;
   border: none;
   font-size: 1.5rem;
   transition: border 0.3s ease;
 }
+input::placeholder, textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+input:focus, textarea:focus {
+  border: 1px solid #e4a436;
+}
 
 input {
-  width: 100%;
   height: 45px;
   margin: 5px 0;
   padding-left: 10px;
 }
-input::placeholder {
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-}
-input:focus {
-  border: 1px solid #e4a436;
-}
 
 textarea {
-  width: 100%;
   margin: 5px auto 10px;
   padding: 15px 0 0 10px;
   resize: none;
-}
-textarea::placeholder {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-}
-textarea:focus {
-  border: 1px solid #e4a436;
 }
 
 .contact-section {
