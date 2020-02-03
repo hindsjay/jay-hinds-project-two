@@ -30,6 +30,12 @@
   h2 {
     margin: 20px 0;
   }
+
+  span {
+    color: $secondary-color;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
 }
 
 .about-image-container span {

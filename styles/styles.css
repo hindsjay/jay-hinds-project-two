@@ -632,6 +632,11 @@ footer p {
 .about-container h2 {
   margin: 20px 0;
 }
+.about-container span {
+  color: #709b6b;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
 .about-image-container span {
   color: #709b6b;
