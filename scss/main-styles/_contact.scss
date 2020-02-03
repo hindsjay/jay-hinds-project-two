@@ -2,7 +2,7 @@
 
 .contact-section {
   background-color: $design-white;
-  padding: 20px 0 40px;
+  padding: 60px 0 40px;
 
   .form-container {
     max-width: 560px;
@@ -26,9 +26,7 @@
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flexin($display: flex, $direction: row, $justify: space-between);
     width: 65%;
     margin-bottom: 10px;
     font-size: 1.9rem;

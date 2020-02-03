@@ -381,8 +381,6 @@ header {
 }
 
 .header-title-container {
-  flex-direction: column;
-  align-items: center;
   width: 90%;
   max-width: 720px;
   margin: 0 auto;
@@ -420,7 +418,7 @@ header {
   letter-spacing: 3px;
 }
 .header-nav-items li:not(:nth-child(3)):hover, .header-nav-items li:not(:nth-child(3)):focus {
-  background-color: #709b6b;
+  background-color: #345231;
   color: #e4a436;
   cursor: pointer;
 }
@@ -432,6 +430,9 @@ header {
   display: block;
 }
 
+.header-nav {
+  background-color: #345231;
+}
 .header-nav input {
   display: none;
 }
@@ -496,6 +497,9 @@ body {
   max-width: 850px;
   margin: 0 auto 20px;
 }
+.main-about .button {
+  width: 160px;
+}
 
 .blog-content-container {
   padding: 30px 10px;
@@ -529,6 +533,7 @@ body {
 }
 .journey-section .button {
   margin-top: 20px;
+  width: 160px;
 }
 
 /* 
@@ -557,8 +562,8 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .links-section h3 {
   font-size: 2rem;
@@ -744,7 +749,7 @@ textarea:focus {
 
 .contact-section {
   background-color: #f6f6f6;
-  padding: 20px 0 40px;
+  padding: 60px 0 40px;
 }
 .contact-section .form-container {
   max-width: 560px;
@@ -788,8 +793,8 @@ textarea:focus {
 
   .comments-container {
     flex-direction: row;
-    align-items: unset;
     justify-content: space-between;
+    align-items: unset;
   }
 
   .comments-image {

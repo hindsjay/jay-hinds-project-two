@@ -20,6 +20,10 @@ body {
     max-width: 850px;
     margin: 0 auto 20px;
   }
+
+  .button {
+    width: 160px;
+  }
 }
 
 .blog-content-container {
@@ -47,9 +51,7 @@ body {
   padding: 10px 0 40px;
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexin($display: flex, $direction: column, $align: center);
   }
 
   h2 {
@@ -58,10 +60,9 @@ body {
 
   .button {
     margin-top: 20px;
+    width: 160px;
   }
-
 }
-
 
 /* 
 hiding banner image on mobile - felt it doesn't really add much value in mobile view and because we have limited space in mobile view I will hide in mobile and bring back in tablet/desktop views.
@@ -71,8 +72,7 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 }
 
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;
+  @include flexin($display: flex, $wrap: wrap);
 
   li {
 
@@ -91,11 +91,7 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
   padding: 30px 0;
 
   .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flexin($display: flex, $direction: row, $wrap: wrap, $justify: center, $align: center);
   }
 
   h3 {
@@ -105,9 +101,7 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 }
 
 .link-content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexin($display: flex, $direction: column, $align: center);
 
   i {
     font-size: 1.7rem;

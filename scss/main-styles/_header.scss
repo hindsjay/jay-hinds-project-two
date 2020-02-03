@@ -2,7 +2,6 @@
 *************  header styles ***************
 */
 
-
 header {
   background-color: $primary-color;
   color: white;
@@ -49,8 +48,6 @@ header {
 }
 
 .header-title-container {
-  flex-direction: column;
-  align-items: center;
   width: 90%;
   max-width: 720px;
   margin: 0 auto;
@@ -86,7 +83,6 @@ header {
   overflow-x: hidden;
 
   li {
-
     font-size: 2rem;
     margin: 10px auto;
     width: 150px;
@@ -94,7 +90,7 @@ header {
 
     &:not(:nth-child(3)):hover,
     &:not(:nth-child(3)):focus{
-      background-color: $secondary-color;
+      background-color: $primary-color;
       color: $accent;
       cursor: pointer;
     }
@@ -111,6 +107,7 @@ header {
 }
 
 .header-nav {
+  background-color: $primary-color;
 
   input {
     display: none;
@@ -159,24 +156,3 @@ header {
   bottom: 8px;
   transform: rotate(45deg);
 }
-
-
-
-// .header-title-container {
-//   h1 {
-//   position: relative;
-
-//     &::before {
-//       display: none;
-//       background-image: url('../willow-assets/circle-text.png');
-//       background-repeat: no-repeat;
-//       display: block;
-//       height: 180px;
-//       width: 180px;
-//       content: "";
-//       position: absolute;
-//       top: 10%;
-//       left: 10%;
-//     }
-//   }
-// }

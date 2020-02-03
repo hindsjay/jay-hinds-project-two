@@ -1,8 +1,9 @@
 
-@mixin flexin($display: null, $direction: null, $wrap: null, $justify: null) {
+@mixin flexin($display: null, $direction: null, $wrap: null, $justify: null, $align: null) {
   display: $display;
   flex-direction: $direction;
   flex-wrap: $wrap;
   justify-content: $justify;
+  align-items: $align;
 }
 
