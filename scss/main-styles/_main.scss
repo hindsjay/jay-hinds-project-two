@@ -17,8 +17,7 @@ body {
 
   p {
     margin-bottom: 20px;
-    max-width: 850px;
-    margin: 0 auto 20px;
+    @include width-center($max-width: 850px, $margin: 0 auto 20px);
   }
 
   .button {
@@ -35,14 +34,12 @@ body {
   }
 
   p {
-    margin: 20px auto;
-    max-width: 600px;
+    @include width-center($max-width: 600px, $margin: 20px auto);
   }
 }
 
 .blog-image-container {
-  max-width: 550px;
-  margin: 0 auto;
+  @include width-center($max-width: 550px, $margin: 0 auto);
 }
 
 .journey-section {
@@ -114,9 +111,7 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 
 .link-content {
   text-align: center;
-  margin: 10px 0 30px;
-  max-width: 520px;
-
+  @include width-center($max-width: 520px, $margin: 10px 0 30px);
 
   p {
     margin-top: 10px;

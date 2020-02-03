@@ -52,15 +52,14 @@
 
   .header-nav-items {
     @include flexin($display: flex, $justify: center, $align: center);
+    @include width-center($max-width: 790px, $margin: 0 auto);
     text-transform: uppercase;
-    margin: 0 auto;
     text-align: unset;
     padding-top: unset;
     height: unset;
     background: unset;
     position: initial;
     transform: translateX(0);
-    max-width: 790px;
     
     li {
       width: unset;
@@ -137,8 +136,7 @@
   }
 
   .image-gallery {
-    margin: 40px auto;
-    max-width: 920px;
+    @include width-center($max-width: 920px, $margin: 40px auto);
 
     li {
       margin: 15px;
@@ -194,9 +192,8 @@
   }
 
   .blog-container {
-    margin: 50px auto;
     @include flexin($justify: center);
-    max-width: 860px;
+    @include width-center($max-width: 860px, $margin: 50px auto);
 
     &:first-child .blog-image-container {
       transform: translate(1px, -21px);
@@ -281,8 +278,7 @@
 
   .banner-image {
     display: block;
-    max-width: 1600px;
-    margin: 0 auto;
+    @include width-center($max-width: 1600px, $margin: 0 auto);
   }
 
   .address-social {

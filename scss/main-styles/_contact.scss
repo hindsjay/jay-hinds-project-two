@@ -5,16 +5,14 @@
   padding: 60px 0 40px;
 
   .form-container {
-    max-width: 560px;
+    @include width-center($max-width: 560px);
   }
 }
 
 .address-social {
   background-color: white;
   padding: 20px;
-  margin: 0 auto 20px;
-  max-width: 288px;
-
+  @include width-center($max-width: 288px, $margin: 0 auto 20px);
 
   p {
     font-size: 1.4rem;

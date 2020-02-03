@@ -18,8 +18,7 @@
 }
 
 .aside-container {
-  max-width: 450px;
-  margin: 0 auto;
+  @include width-center($max-width: 450px, $margin: 0 auto);
 }
 
 .about-container {
@@ -100,8 +99,8 @@
 
 .form-container {
   @include flexin($display: flex, $direction: column);
+  @include width-center($margin: 0 auto);
   padding: 20px 0;
-  margin: 0 auto;
 
   .button {
     width: 100%;
@@ -112,8 +111,8 @@
 
 .input-container {
   @include flexin($display: flex, $direction: column);
+  @include width-center($margin: 0 auto);
   width: 100%;
-  margin: 0 auto;
 }
 
 input, textarea {

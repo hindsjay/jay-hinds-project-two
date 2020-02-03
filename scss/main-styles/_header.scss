@@ -49,8 +49,7 @@ header {
 
 .header-title-container {
   width: 90%;
-  max-width: 720px;
-  margin: 0 auto;
+  @include width-center($max-width: 720px, $margin: 0 auto);
   padding-bottom: 20px;
 
   h1 {
@@ -60,9 +59,7 @@ header {
 
 .header-image-container {
   padding-bottom: 20px;
-  max-width: 450px;
-  margin: 0 auto;
-
+  @include width-center($max-width: 450px, $margin: 0 auto);
 }
 
 

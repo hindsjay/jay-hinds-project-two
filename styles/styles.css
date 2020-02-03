@@ -509,8 +509,8 @@ body {
   font-size: 2rem;
 }
 .blog-content-container p {
-  margin: 20px auto;
   max-width: 600px;
+  margin: 20px auto;
 }
 
 .blog-image-container {
@@ -585,8 +585,8 @@ hiding banner image on mobile - felt it doesn't really add much value in mobile 
 
 .link-content {
   text-align: center;
-  margin: 10px 0 30px;
   max-width: 520px;
+  margin: 10px 0 30px;
 }
 .link-content p {
   margin-top: 10px;
@@ -697,8 +697,8 @@ footer p {
 .form-container {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
   margin: 0 auto;
+  padding: 20px 0;
 }
 .form-container .button {
   width: 100%;
@@ -709,8 +709,8 @@ footer p {
 .input-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 input, textarea {
@@ -758,8 +758,8 @@ textarea:focus {
 .address-social {
   background-color: white;
   padding: 20px;
-  margin: 0 auto 20px;
   max-width: 288px;
+  margin: 0 auto 20px;
 }
 .address-social p {
   font-size: 1.4rem;
@@ -836,15 +836,15 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    max-width: 790px;
     margin: 0 auto;
+    text-transform: uppercase;
     text-align: unset;
     padding-top: unset;
     height: unset;
     background: unset;
     position: initial;
     transform: translateX(0);
-    max-width: 790px;
   }
   .header-nav-items li {
     width: unset;
@@ -916,8 +916,8 @@ textarea:focus {
   }
 
   .image-gallery {
-    margin: 40px auto;
     max-width: 920px;
+    margin: 40px auto;
   }
   .image-gallery li {
     margin: 15px;
@@ -969,9 +969,9 @@ textarea:focus {
   }
 
   .blog-container {
-    margin: 50px auto;
     justify-content: center;
     max-width: 860px;
+    margin: 50px auto;
   }
   .blog-container:first-child .blog-image-container {
     transform: translate(1px, -21px);
