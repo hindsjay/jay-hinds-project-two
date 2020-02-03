@@ -361,7 +361,6 @@ header {
 }
 
 .header-nav-items {
-  display: none;
   background-color: #345231;
 }
 
@@ -392,6 +391,84 @@ header {
   padding-bottom: 20px;
   max-width: 450px;
   margin: 0 auto;
+}
+
+/* ************* header hamburger menu styles ************* */
+.header-nav-items {
+  text-align: center;
+  padding-top: 100px;
+  margin: 0 auto;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+  overflow-x: hidden;
+}
+.header-nav-items li {
+  font-size: 2rem;
+  margin: 10px auto;
+  width: 150px;
+  letter-spacing: 3px;
+}
+.header-nav-items li:not(:nth-child(3)):hover, .header-nav-items li:not(:nth-child(3)):focus {
+  background-color: #709b6b;
+  color: #e4a436;
+  cursor: pointer;
+}
+.header-nav-items li:nth-child(3) {
+  display: none;
+}
+.header-nav-items li a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.header-nav input {
+  display: none;
+}
+.header-nav input:checked ~ .header-nav-items {
+  transform: translateX(0);
+}
+.header-nav span {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  display: block;
+  background: white;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.hamburger {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 100;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+/* ************* styles to transform the hamburger menu on click ************* */
+/* top line */
+.header-nav input:checked ~ .hamburger span:first-child {
+  top: 7px;
+  transform: rotate(-45deg);
+}
+
+/* middle line */
+.header-nav input:checked ~ .hamburger span:nth-last-child(2) {
+  opacity: 0;
+  transform: scale(0.2);
+}
+
+/* third line */
+.header-nav input:checked ~ .hamburger span:last-child {
+  bottom: 8px;
+  transform: rotate(45deg);
 }
 
 /* 
@@ -735,6 +812,23 @@ textarea::placeholder {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    margin: 0 auto;
+    text-align: unset;
+    padding-top: unset;
+    height: unset;
+    background: unset;
+    position: initial;
+    transform: translateX(0);
+    max-width: 790px;
+  }
+  .header-nav-items li {
+    width: unset;
+  }
+  .header-nav-items li:nth-child(3) {
+    display: initial;
+  }
+  .header-nav-items li:not(:nth-child(3)):hover, .header-nav-items li:not(:nth-child(3)):focus {
+    background-color: initial;
   }
   .header-nav-items a {
     padding: 10px 20px;
@@ -747,6 +841,10 @@ textarea::placeholder {
     margin: 0 10px;
     font-family: "Abril Fatface", cursive;
     font-size: 3.2rem;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .header-title-container {
@@ -818,11 +916,11 @@ textarea::placeholder {
   }
 
   .blog-header h1 {
-    transform: translate(-32%, 480%);
+    transform: translate(-32%, 433%);
   }
 
   .contact-header h1 {
-    transform: translate(-27%, 429%);
+    transform: translate(-27%, 384%);
   }
 }
 @media (min-width: 800px) {
